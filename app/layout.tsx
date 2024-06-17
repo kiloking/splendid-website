@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="zh-tw">
       <body className={cn(
-        "bg-[#fff]",
+        "bg-[#F5F5F5]",
         inter.className
          )}>
           {children}

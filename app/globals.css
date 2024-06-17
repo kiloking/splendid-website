@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+.leftBubble{
+  @apply rounded-l-[35px] rounded-tr-[35px];
+}
+.rightBubble{
+  @apply rounded-r-[35px] rounded-tl-[35px];
+}
+
 .player-wrapper {
   position: relative;
   padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
@@ -42,4 +49,15 @@
   stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  cursor: ew-resize;
+  background: #FFF;
+  border-radius: 50%;
+  
 }

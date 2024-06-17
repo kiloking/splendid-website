@@ -1,8 +1,10 @@
 'use client'
+import React, { useState, useRef } from 'react';
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 import Image from "next/image";
 import { frontNavLinks} from '../../constants/index'
+import { FaVolumeUp,FaVolumeMute } from "react-icons/fa";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination,Navigation,Autoplay } from 'swiper/modules';
@@ -16,18 +18,39 @@ export default function Home() {
     "https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/p01.jpg",
     "https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/p02.jpg",
     "https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/p03.jpg",
+    "https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/p04.jpg",
+    "https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/p05.jpg",
   ] 
+  const [isMuted, setIsMuted] = useState(true);
+  const [volume, setVolume] = useState(0.5); // 初始音量設置為50%
+  const [played, setPlayed] = useState(0); // 追踪播放進度
+  const playerRef = useRef(null);
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+  };
+  const handleVolumeChange = (e) => {
+    setVolume(parseFloat(e.target.value));
+  };
+
+  const handleSeekChange = (e) => {
+    setPlayed(parseFloat(e.target.value));
+    playerRef.current.seekTo(parseFloat(e.target.value));
+  };
 
   return (
     <>
       <section className=" ">
-        <div className="relative pt-[56.2%] w-full -z-10  pointer-events-none overflow-hidden">
+        <div className="relative pt-[56.2%] w-full -z-0  ">
           <ReactPlayer
+            ref={playerRef}
             url="https://www.youtube.com/watch?v=sCmFKqpO76k"
             className='react-player'
             playing
             playsinline
-            muted
+            muted={isMuted}
+            volume={volume}
+            onProgress={(state) => setPlayed(state.played)}
             loop
             controls={false}
             width='100vw'
@@ -38,40 +61,26 @@ export default function Home() {
               }
             }}
           />
-        </div>
-        <div className="z-10 absolute top-0  bg-black/0 w-full flex items-center px-10 pt-8 pb-6 space-x-10 group/navbarC">
-          <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b via-black/30 from-black/50 transition-all opacity-0 group-hover/navbarC:opacity-100 -z-10 pointer-events-none"></div>
-          <div className="w-[10%]">
-            <Image src='/assets/images/logo_w.png' alt="image" width={200} height={24} priority={false}/>
+          <div  className=" cursor-pointer absolute bottom-10 left-10 z-[999] flex items-center gap-2">
+            <button onClick={toggleMute}  className=" cursor-pointer  bg-black/60 text-white px-4 py-2 rounded-full">
+              {isMuted ?   <div><FaVolumeMute /></div>: <div><FaVolumeUp /></div>}
+            </button>
+            <div className="controls bg-black/60 text-white px-4 py-0 rounded-full">
+              <input
+                type="range"
+                min={0}
+                max={1}
+                step="any"
+                value={volume}
+                onChange={handleVolumeChange}
+                className=" transparent h-[4px] w-full cursor-pointer appearance-none border-transparent bg-neutral-200 dark:bg-neutral-600 mb-[15px] rounded-full"
+              />
+           
+            </div>
           </div>
 
-          <ul className="flex flex-center w-full space-x-10 text-white">
-            {frontNavLinks.map((item,index)=>{
-              return(
-                <li key={`navtitle`+index} className="group relative dropdown text-white/80">
-                  <a href="/" className="hover:text-white">{item.label}</a>
-                  {item.sub &&
-                    <div className="group-hover:block dropdown-menu absolute hidden h-auto left-1/2 -translate-x-1/2  ">
-
-                      <ul className="top-0 bg-black/70 shadow px-6 py-6 w-auto  ">
-                          {item.sub.map((subitem,index)=>{
-                            return(
-                              <li key={`navsub`+index} className="py-1">
-                                <a className="block text-white/80 font-bold break-keep  hover:text-white cursor-pointer">
-                                  {subitem.label}
-                                </a>
-                              </li>
-                            )
-                          })}
-                      </ul>
-                    </div>
-                  }
-                </li>
-              )
-            })}
-
-          </ul>
         </div>
+
       </section>
       <section className=" w-full ">
         <Swiper
