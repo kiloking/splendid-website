@@ -61,3 +61,13 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   
 }
+.swiper .swiper-wrapper{
+  padding-bottom: 30px;
+}
+.swiper .swiper-container {
+  overflow: visible !important;
+}
+.swiper .swiper-pagination{
+  position: absolute;
+  bottom:-5px !important;
+}

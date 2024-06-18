@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
   return (
     <div className='mt-[120px] px-20'>
@@ -27,6 +28,7 @@ const Projects = () => {
                     <li>棟戶規劃 2幢，2棟，53戶住家</li>
                     <li>樓層規劃 地上10層，地下2層</li>
                   </ul>
+                  <div className=' absolute bottom-6 right-6'><FaExternalLinkAlt /></div>
                 </div>
             </div>
             <div className='mt-4'>
@@ -37,7 +39,8 @@ const Projects = () => {
            
           </div>
           <div className='w-1/2  aspect-square relative group/p02 cursor-pointer' data-aos="zoom-out">
-            <div className='w-full overflow-hidden rounded-2xl relative   '>
+            <div  className='w-full overflow-hidden rounded-2xl relative   '>
+              <a href='https://www.maizizi.vaserver.com/dayu-yangyun/' target='_blank'>
                 <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/project02.jpg' alt="image" 
                   width={200} height={200} priority={false} 
                   layout="responsive" 
@@ -52,7 +55,9 @@ const Projects = () => {
                     <li>棟戶規劃 2幢，2棟，44戶住家，1戶店面</li>
                     <li>樓層規劃 地上12、5層，地下3層</li>
                   </ul>
+                  <div className=' absolute bottom-6 right-6'><FaExternalLinkAlt /></div>
                 </div>
+              </a>
             </div>
             <div className='mt-4'>
               <div className=' flex items-end gap-3'> <div className=' font-bold text-3xl'>大漁仰昀</div> <span>2022</span></div>

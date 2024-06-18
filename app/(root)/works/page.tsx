@@ -13,7 +13,7 @@ const Works = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-4 gap-4 mt-10'>
+      <div className='grid grid-cols-4 gap-4 mt-10 min-h-[500px]'>
         {datas.map((d,index)=>{
           return(
             <Link href={'/works/'+d.route} className=' relative group/p01 cursor-pointer'>
