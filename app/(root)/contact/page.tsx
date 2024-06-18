@@ -112,7 +112,7 @@ const Contact = () => {
             {errors.name && <span>This field is required</span>}
             <div className='text-[#5C2C1F] font-bold text-sm w-full mx-auto my-4'>
               <div className=' flex mt-2 text-xs md:text-base items-center justify-center'>
-                <input type="checkbox"  className='px-1 mr-1' id="checkit" name="checkit" defaultChecked {...register("checkit", { required: true})}/>
+                <input type="checkbox"  className='px-1 mr-1' id="checkit"  defaultChecked {...register("checkit", { required: true})}/>
                 <div className='text-black ml-2   underline-offset-2 cursor-pointer' onClick={()=>setIsOpen(true)}> <span className='underline'>個人資料聲明事項</span>，我同意通過電話或郵件方式與我聯絡</div>
               </div>
             </div>
