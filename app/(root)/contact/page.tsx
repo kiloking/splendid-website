@@ -10,6 +10,7 @@ const Contact = () => {
     mail: string
     subject: string
     msg: string
+    checkit: boolean
   }
   const [formStatus , setFormStatus] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +106,7 @@ const Contact = () => {
                   px-3 py-2  " placeholder="主旨"    {...register("subject", { required: true})}/>
             </div>
             <div className='w-full my-3  '>
-              <textarea  cols="30" rows="10" className='w-full'  {...register("msg")}></textarea>
+              <textarea  className='w-full h-[250px]'  {...register("msg")}></textarea>
             </div>
 
             {errors.name && <span>This field is required</span>}
