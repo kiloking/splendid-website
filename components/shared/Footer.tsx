@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
 
 
-      <div className=' flex flex-col md:flex-row items-center gap-3 md:gap-6 text-xl md:text-sm'>
+      <div className=' flex flex-col md:flex-row items-center gap-3 md:gap-6 text-lg md:text-sm'>
         <div className='flex items-center gap-6'> 
           <a target='_blank' className=' border aspect-square p-1 border-black/40 hover:bg-zinc-300' href="https://www.facebook.com/"><FaFacebookF /></a>
           <a target='_blank' className=' border aspect-square p-1 border-black/40 hover:bg-zinc-300' href="https://www.instagram.com/"><FaInstagram /></a>

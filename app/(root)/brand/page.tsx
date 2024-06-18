@@ -26,7 +26,7 @@ const Brand = () => {
         <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' >品牌初心</div>
         <div className='flex flex-col gap-4'>
           <div className='text-5xl font-thin my-2' data-aos="fade-left" data-aos-duration="700">人本，幸福住居</div>
-          <div className='w-1/2' data-aos="fade-left" data-aos-duration="700">
+          <div className='md:w-1/2' data-aos="fade-left" data-aos-duration="700">
             <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/brand01.jpg' alt="image" 
               width={200} height={24} priority={false} 
               layout="responsive" 
@@ -45,7 +45,7 @@ const Brand = () => {
         <br />
         <div className='flex flex-col gap-4'>
           <div className='text-5xl font-thin my-2' data-aos="fade-left" data-aos-duration="700">在地，溫度建築</div>
-          <div className='w-1/2' data-aos="fade-left" data-aos-duration="700">
+          <div className='md:w-1/2' data-aos="fade-left" data-aos-duration="700">
             <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/brand02.jpg' alt="image" 
               width={200} height={24} priority={false} 
               layout="responsive" 
@@ -62,7 +62,7 @@ const Brand = () => {
         <br />
         <div className='flex flex-col gap-4'>
           <div className='text-5xl font-thin my-2' data-aos="fade-left" data-aos-duration="700">大漁，匠心臻品</div>
-          <div className='w-1/2' data-aos="fade-left" data-aos-duration="700">
+          <div className='md:w-1/2' data-aos="fade-left" data-aos-duration="700">
             <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/brand03.jpg' alt="image" 
               width={200} height={24} priority={false} 
               layout="responsive" 

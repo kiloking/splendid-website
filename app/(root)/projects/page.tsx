@@ -11,7 +11,7 @@ const Projects = () => {
         </div>
 
         <div className='flex flex-col md:flex-row justify-between gap-5 my-10'>
-          <div className='md:w-1/2  aspect-square relative group/p01 cursor-pointer'>
+          <div className='md:w-1/2 w-full  aspect-square relative group/p01 cursor-pointer'>
             <div className='w-full overflow-hidden rounded-2xl relative   ' data-aos="zoom-out">
               <a href='https://www.dayudali.com/' target='_blank'>
                 <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/project01.jpg' alt="image" 
@@ -21,9 +21,9 @@ const Projects = () => {
                   className="w-full h-full group-hover/p01:scale-110 transition-all duration-500"
                   // data-aos="zoom-out"
                 />
-                <div className=' bg-gradient-to-t from-[#1F0B03] via-[#1F0B0300] transition-all duration-500 opacity-0 group-hover/p01:opacity-100   w-full h-full absolute z-10 top-0 left-0  flex flex-col justify-end items-start p-8 text-white/90'>
+                <div className=' bg-gradient-to-t from-[#1F0B03] via-[#1F0B0360] md:via-[#1F0B0300] transition-all duration-500 opacity-0 group-hover/p01:opacity-100   w-full h-full absolute z-10 top-0 left-0  flex flex-col justify-end items-start p-8 text-white/90'>
                   <div className=' mb-2'>城心留白秘境｜大里城心，留白謐境，讓居住沐光，為鄰里富藏</div>
-                  <ul>
+                  <ul className='text-sm md:text-md'>
                     <li>24-38坪 ，2-3房</li>
                     <li>基地面積 455.8坪</li>
                     <li>棟戶規劃 2幢，2棟，53戶住家</li>
@@ -40,7 +40,7 @@ const Projects = () => {
            
            
           </div>
-          <div className='md:w-1/2  aspect-square relative group/p02 cursor-pointer' data-aos="zoom-out">
+          <div className='md:w-1/2 w-full  aspect-square relative group/p02 cursor-pointer' data-aos="zoom-out">
             <div  className='w-full overflow-hidden rounded-2xl relative   '>
               <a href='https://www.maizizi.vaserver.com/dayu-yangyun/' target='_blank'>
                 <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/project02.jpg' alt="image" 
@@ -49,9 +49,9 @@ const Projects = () => {
                   objectFit="cover"
                   className="w-full h-full group-hover/p02:scale-110 transition-all duration-500"
                 />
-                <div className=' bg-gradient-to-t from-[#1F0B03] via-[#1F0B0300] transition-all duration-500 opacity-0 group-hover/p02:opacity-100   w-full h-full absolute z-10 top-0 left-0  flex flex-col justify-end items-start p-8 text-white/90'>
+                <div className=' bg-gradient-to-t from-[#1F0B03] via-[#1F0B0360] md:via-[#1F0B0300]  transition-all duration-500 opacity-0 group-hover/p02:opacity-100   w-full h-full absolute z-10 top-0 left-0  flex flex-col justify-end items-start p-8 text-white/90'>
                   <div className=' mb-2'>綠意跳島建築｜安身氣度、居住無界，夢想格局在此展開</div>
-                  <ul>
+                  <ul className='text-sm md:text-md'>
                     <li>37-45坪， 3房 </li>
                     <li>基地面積482坪</li>
                     <li>棟戶規劃 2幢，2棟，44戶住家，1戶店面</li>
