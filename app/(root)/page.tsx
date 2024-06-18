@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef,ChangeEvent } from 'react';
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 import Image from "next/image";
@@ -29,14 +29,10 @@ export default function Home() {
   const toggleMute = () => {
     setIsMuted(!isMuted);
   };
-  const handleVolumeChange = (e) => {
+  const handleVolumeChange = (e: ChangeEvent<HTMLInputElement>) => {
     setVolume(parseFloat(e.target.value));
   };
 
-  const handleSeekChange = (e) => {
-    setPlayed(parseFloat(e.target.value));
-    playerRef.current.seekTo(parseFloat(e.target.value));
-  };
 
   return (
     <>
