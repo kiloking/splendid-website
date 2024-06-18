@@ -16,7 +16,7 @@ const Works = () => {
       <div className='grid md:grid-cols-4 gap-4 mt-10 min-h-[500px]'>
         {datas.map((d,index)=>{
           return(
-            <Link href={'/works/'+d.route} className=' relative group/p01 cursor-pointer'>
+            <Link  key={d.route} href={'/works/'+d.route} className=' relative group/p01 cursor-pointer'>
               <div className='w-full overflow-hidden rounded-2xl relative   ' data-aos="zoom-out">
                   <Image src={`https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/${d.image}`} alt="image" 
                     width={200} height={200} priority={false} 

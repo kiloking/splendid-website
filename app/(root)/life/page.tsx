@@ -40,7 +40,7 @@ const Life = () => {
         {
           lifes.map((item,index)=>{
             return(
-              <SwiperSlide>
+              <SwiperSlide key={item.image}>
                 <div className='flex flex-col md:flex-row items-end gap-10'>
                   <div className='md:w-1/2 '>
                     <Image src={`https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/life/${item.image}`} alt="image" 
