@@ -64,7 +64,7 @@ const Contact = () => {
 
 
   return (
-    <div className='mt-[88px] px-20'>
+    <div className='md:mt-[88px] px-10 md:px-20'>
       <div className='w-full aspect-[16/5] overflow-hidden  bg-zinc-400 rounded-lg relative'>
         <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/contactBanner.jpg' alt="image" 
           width={200} height={24} priority={false} 
@@ -73,14 +73,14 @@ const Contact = () => {
           className="w-full h-full top-0 left-0 object-cover "
           data-aos="fade"
         />
-        <div className=' flex flex-col items-start gap-4  absolute top-10 left-10 z-10'>
+        <div className=' flex flex-col items-start gap-4  absolute md:top-10 md:left-10 top-2 left-2 z-10'>
           <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' data-aos="fade-left">聯絡大漁</div>
-          <div className='text-5xl font-thin  tracking-tight text-white ' data-aos="fade-left">CONTACT US</div>
+          <div className='text-3xl md:text-5xl font-thin  tracking-tight text-white ' data-aos="fade-left">CONTACT US</div>
         </div>
       </div>
 
-      <div className=' flex items-start gap-10 mt-10'>
-        <div className='w-1/2'>
+      <div className=' flex flex-col md:flex-row items-start gap-10 mt-10'>
+        <div className='md:w-1/2 w-full'>
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1536.1056825897736!2d120.65004950316802!3d24.150525645010294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d965be3bd51%3A0x60d3bee9c1d4e071!2z5aSn5ryB5bu66Kit6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1718680307616!5m2!1szh-TW!2stw" 
             width="100%" 
@@ -89,7 +89,7 @@ const Contact = () => {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div className='w-1/2'>
+        <div className='md:w-1/2 w-full'>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className='w-full  mb-3'>
               <input type="text" className="block  bg-white  w-full

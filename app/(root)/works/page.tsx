@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Works = () => {
 
   return (
-    <div className='mt-[120px] px-20'>
+    <div className='md:mt-[120px] px-10 md:px-20'>
       <div className=' w-full mx-auto items-stretch gap-10'>
         <div className=' flex flex-col items-start gap-4'>
           <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' data-aos="fade-left">經典作品</div>
@@ -13,7 +13,7 @@ const Works = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-4 gap-4 mt-10 min-h-[500px]'>
+      <div className='grid md:grid-cols-4 gap-4 mt-10 min-h-[500px]'>
         {datas.map((d,index)=>{
           return(
             <Link href={'/works/'+d.route} className=' relative group/p01 cursor-pointer'>

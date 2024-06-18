@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Brand = () => {
   return (
-    <div className='mt-[88px] px-20'>
+    <div className='md:mt-[88px] px-4 md:px-20'>
       <div className='w-full aspect-[16/5] overflow-hidden  bg-zinc-400 rounded-lg'>
         <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/brandBanner.jpg' alt="image" 
           width={200} height={24} priority={false} 
@@ -15,14 +15,14 @@ const Brand = () => {
 
     <div className='flex my-10 items-stretch gap-10'>
       <div 
-        className='w-1/3 flex  bg-cover bg-center bg-no-repeat'
+        className='w-1/3 md:flex  bg-cover bg-center bg-no-repeat hidden '
         style={{
           backgroundImage: `url('${'https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/brandbg.jpg'}')`,
         }}
       
       >
       </div>
-      <div className=' flex flex-col items-start gap-4  w-2/3'>
+      <div className=' flex flex-col items-start gap-4  md:w-2/3'>
         <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' >品牌初心</div>
         <div className='flex flex-col gap-4'>
           <div className='text-5xl font-thin my-2' data-aos="fade-left" data-aos-duration="700">人本，幸福住居</div>

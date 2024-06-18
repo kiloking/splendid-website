@@ -61,7 +61,7 @@ export default function Home() {
               }
             }}
           />
-          <div  className=" cursor-pointer absolute bottom-10 left-10 z-[999] flex items-center gap-2">
+          <div  className=" cursor-pointer absolute bottom-0 left-0 md:bottom-10 md:left-10 z-[999] flex items-center gap-2">
             <button onClick={toggleMute}  className=" cursor-pointer  bg-black/60 text-white px-4 py-2 rounded-full">
               {isMuted ?   <div><FaVolumeMute /></div>: <div><FaVolumeUp /></div>}
             </button>

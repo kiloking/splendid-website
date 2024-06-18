@@ -3,16 +3,17 @@ import Image from 'next/image'
 import { FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
   return (
-    <div className='mt-[120px] px-20'>
+    <div className='md:mt-[120px] px-10 md:px-20'>
       <div className=' w-full mx-auto items-stretch gap-10'>
         <div className=' flex flex-col items-start gap-4'>
           <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' data-aos="fade-left">新案鑑賞</div>
           <div className='text-5xl font-thin  tracking-tight ' data-aos="fade-left">PROJECTS</div>
         </div>
 
-        <div className='flex justify-between gap-5 my-10'>
-          <div className='w-1/2  aspect-square relative group/p01 cursor-pointer'>
+        <div className='flex flex-col md:flex-row justify-between gap-5 my-10'>
+          <div className='md:w-1/2  aspect-square relative group/p01 cursor-pointer'>
             <div className='w-full overflow-hidden rounded-2xl relative   ' data-aos="zoom-out">
+              <a href='https://www.dayudali.com/' target='_blank'>
                 <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/project01.jpg' alt="image" 
                   width={200} height={200} priority={false} 
                   layout="responsive" 
@@ -30,6 +31,7 @@ const Projects = () => {
                   </ul>
                   <div className=' absolute bottom-6 right-6'><FaExternalLinkAlt /></div>
                 </div>
+              </a>
             </div>
             <div className='mt-4'>
               <div className=' flex items-end gap-3'> <div className=' font-bold text-3xl'>大漁仁美</div> <span>2024</span></div>
@@ -38,7 +40,7 @@ const Projects = () => {
            
            
           </div>
-          <div className='w-1/2  aspect-square relative group/p02 cursor-pointer' data-aos="zoom-out">
+          <div className='md:w-1/2  aspect-square relative group/p02 cursor-pointer' data-aos="zoom-out">
             <div  className='w-full overflow-hidden rounded-2xl relative   '>
               <a href='https://www.maizizi.vaserver.com/dayu-yangyun/' target='_blank'>
                 <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/project02.jpg' alt="image" 
