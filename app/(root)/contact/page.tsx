@@ -65,7 +65,7 @@ const Contact = () => {
 
   return (
     <div className='mt-[88px] px-20'>
-      <div className='w-full aspect-[16/5] overflow-hidden  bg-zinc-400 rounded-lg'>
+      <div className='w-full aspect-[16/5] overflow-hidden  bg-zinc-400 rounded-lg relative'>
         <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/contactBanner.jpg' alt="image" 
           width={200} height={24} priority={false} 
           layout="responsive" 
@@ -73,6 +73,10 @@ const Contact = () => {
           className="w-full h-full top-0 left-0 object-cover "
           data-aos="fade"
         />
+        <div className=' flex flex-col items-start gap-4  absolute top-10 left-10 z-10'>
+          <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' data-aos="fade-left">聯絡大漁</div>
+          <div className='text-5xl font-thin  tracking-tight text-white ' data-aos="fade-left">CONTACT US</div>
+        </div>
       </div>
 
       <div className=' flex items-start gap-10 mt-10'>
