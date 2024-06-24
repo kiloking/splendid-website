@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="relative z-20">
           <div className="flex justify-between items-center p-4  text-black">
             <Link href='/' className="text-xl font-bold">
-              <Image src='/assets/images/logo.png' alt="logo" width={100} height={24} priority={false} />
+              <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/logo.png' alt="logo" width={100} height={24} priority={false} />
             </Link>
             <div onClick={toggleMenu} className="focus:outline-none">
               <FaBars />
@@ -77,9 +77,9 @@ const Navbar = () => {
           <Link href='/' className="w-[10%]">
             {
               type==='home'? 
-              <Image src='/assets/images/logo_w.png' alt="image" width={200} height={24} priority={false}/>
+              <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/logo_w.png' alt="image" width={200} height={24} priority={false}/>
               :
-              <Image src='/assets/images/logo.png' alt="image" width={200} height={24} priority={false}/>
+              <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/logo.png' alt="image" width={200} height={24} priority={false}/>
             }
           </Link>
 

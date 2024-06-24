@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className='text-black/50 text-[1vw] text-right pb-4 w-11/12 mx-auto flex flex-col items-center gap-5 mt-20 mb-2'>
       <div className='w-24'>
-        <Image src='/assets/images/logo.png' alt="image" width={200} height={24} priority={false}/>
+        <Image src='https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/logo.png' alt="image" width={200} height={24} priority={false}/>
       </div>
 
 
