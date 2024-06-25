@@ -18,14 +18,21 @@ const Life = () => {
           className="w-full h-full top-0 left-0 object-cover  "
           data-aos="fade"
         />
-      <div className=' flex flex-col items-start gap-4  absolute md:top-10 md:left-10 top-2 left-2 z-10'>
-        <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' data-aos="fade-left">大漁生活</div>
-        <div className=' text-3xl md:text-5xl font-thin  tracking-tight ' data-aos="fade-left">LIFE</div>
-      </div>
+        <div className=' flex flex-col items-start gap-4  absolute md:top-10 md:left-10 top-2 left-2 z-10'>
+          <div className=' bg-[#DC0000] text-white text-sm px-3 py-1 rounded-md' data-aos="fade-left">大漁生活</div>
+          <div className=' text-3xl md:text-5xl font-thin  tracking-tight ' data-aos="fade-left">LIFE</div>
+        </div>
 
       </div>
 
-      <div className='mt-14 w-10/12 mx-auto'>
+      <div  className='w-full md:w-10/12 mx-auto my-10 text-center ' data-aos="fade-up" >
+        <div className=' font-semibold text-xl md:text-2xl'>建築，是生活的容器。</div>
+
+        <div className=' text-sm mt-2 md:text-xl'>空間中的每一方寸，都能勾勒一段對於居住的嚮往。大漁以每一個細微處的貼心規劃，展現對居者的多一分用心，跟著大漁，閱讀設計，我們一同想像生活的美好面貌。</div>
+
+      </div>
+
+      <div className='mt-6 w-10/12 mx-auto'>
       <Swiper
         spaceBetween={30}
         slidesPerView={1}

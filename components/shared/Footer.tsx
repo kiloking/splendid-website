@@ -16,7 +16,7 @@ const Footer = () => {
           <a target='_blank' className=' border aspect-square p-1 border-black/40 hover:bg-zinc-300' href="https://www.instagram.com/"><FaInstagram /></a>
         </div>
         <div className='flex items-center gap-2'><FaPhoneAlt size={10} />TEL 04-2329 9298</div>
-        <div className='flex items-center gap-2'><FaMapMarkerAlt size={10}/>403台中市西區公益路二段51號13樓B2室</div>
+        <div className='flex items-center gap-2'><FaMapMarkerAlt size={10}/>408台中市南屯區公益路二段51號13樓B2室</div>
         <div>copyright, 2024 All Right Reserved.</div>
       </div>
 

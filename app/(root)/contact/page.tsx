@@ -83,7 +83,7 @@ const Contact = () => {
       <div className=' flex flex-col md:flex-row items-start gap-10 mt-10'>
         <div className='md:w-1/2 w-full'>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1536.1056825897736!2d120.65004950316802!3d24.150525645010294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d965be3bd51%3A0x60d3bee9c1d4e071!2z5aSn5ryB5bu66Kit6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1718680307616!5m2!1szh-TW!2stw" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.150525489773!2d120.65076262327881!3d24.150607969328128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9650651049%3A0xd30d41d8ae854da9!2zNDA45Y-w5Lit5biC5Y2X5bGv5Y2A5YWs55uK6Lev5LqM5q61NTHomZ8xM-aok0Iy5a6k!5e0!3m2!1szh-TW!2stw!4v1719305491032!5m2!1szh-TW!2stw" 
             width="100%" 
             height="450"  
             allowFullScreen

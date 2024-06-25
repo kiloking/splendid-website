@@ -35,7 +35,7 @@ const Projects = () => {
             </div>
             <div className='mt-4'>
               <div className=' flex items-end gap-3'> <div className=' font-bold text-3xl'>大漁仁美</div> <span>2024</span></div>
-              <div className='text-black/80 text-sm mt-2'>台中市北屯區</div>
+              <div className='text-black/80 text-sm mt-2'>台中市大里區</div>
             </div>
            
            
@@ -63,7 +63,7 @@ const Projects = () => {
             </div>
             <div className='mt-4'>
               <div className=' flex items-end gap-3'> <div className=' font-bold text-3xl'>大漁仰昀</div> <span>2022</span></div>
-              <div className='text-black/80 text-sm mt-2'>台中市大里區</div>
+              <div className='text-black/80 text-sm mt-2'>台中市北屯區</div>
             </div>
            
            
