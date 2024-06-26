@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.leftBubble{
+.leftBubble {
   @apply rounded-l-[35px] rounded-tr-[35px];
 }
-.rightBubble{
+.rightBubble {
   @apply rounded-r-[35px] rounded-tl-[35px];
 }
 
@@ -57,17 +56,20 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   height: 15px;
   cursor: ew-resize;
-  background: #FFF;
+  background: #fff;
   border-radius: 50%;
-  
 }
-.swiper .swiper-wrapper{
+.swiper .swiper-wrapper {
   padding-bottom: 30px;
 }
 .swiper .swiper-container {
   overflow: visible !important;
 }
-.swiper .swiper-pagination{
+.swiper .swiper-pagination {
   position: absolute;
-  bottom:-5px !important;
+  bottom: -5px !important;
+}
+
+.work-text-under-img {
+  @apply text-lg mt-3 font-semibold text-black/80 text-center w-10/12 mx-auto;
 }
