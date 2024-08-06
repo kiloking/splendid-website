@@ -73,3 +73,12 @@ input[type="range"]::-webkit-slider-thumb {
 .work-text-under-img {
   @apply text-lg mt-3 font-semibold text-black/80 text-center w-10/12 mx-auto;
 }
+
+.swiper-button-prev {
+  left: -6% !important;
+  color: #5e0101 !important;
+}
+.swiper-button-next {
+  right: -6% !important;
+  color: #5e0101 !important;
+}

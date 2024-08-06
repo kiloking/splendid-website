@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: "https://pub-a73f7d8384414e33a55eebf09fd805cd.r2.dev/p02.jpg",
   },
+  icons: {
+    icon: "/favicon.ico", // /public path
+  },
 };
 
 export default function RootLayout({
